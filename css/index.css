@@ -1,0 +1,10 @@
+a {
+    text-decoration-line: none;
+}
+li {
+    display: inline-flex;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
