@@ -9,6 +9,7 @@
   </head>
   <body>
       <header>
+          <div id="clock"></div>
     <h1>Welcome to my Store!!!</h1>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navigation</a>
@@ -21,19 +22,38 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Products</a>
+        <a class="nav-link" href="#products">Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Comments</a>
+        <a class="nav-link" href="#comments">Comments</a>
       </li>
     </ul>
-     <div>
-     <a class="nav-link" href="#cartModal" data-toggle="modal">
-     <i class="fas fa-shopping-cart"></i>
-      Cart<span id="cart-badge" class="badge badge-light"></span>
-     </a>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#Modal">
+  Cart
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="Moda" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Buy</button>
+      </div>
+    </div>
   </div>
-</nav>
+</div>
+  </div>
+ </nav>
 <div id="productsCarousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="2000">
@@ -57,22 +77,22 @@
 </div>
       </header>
       <main>
-      <h1>Products</h1>
+      <h1 id="products">Products</h1>
       <article class="product-card">
                 <h3>GTA 5</h3>
                 <img src="img/gta5.jpg" alt="GTA 5">
                 <div class="button-container">
                     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductsInfoModal">
   Info
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="ProductsInfomationModal" tabindex="-1" role="dialog"  aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="ProductsInformationModalTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -104,22 +124,20 @@ Price: $13
 </div>
 <button type="button" class="btn btn-primary">Buy</button>
                 </div>
-            </article>
-             <article class="product-card">
                 <h3>Metro 2033</h3>
                 <img src="img/metro2033.jpg" alt="Metro 2033">
                 <div class="button-container">
                     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductsInfoModal">
   Info
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="ProductsInfoModal" tabindex="-1" role="dialog" aria-labelledby="ProductsInfoModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="ProductsInfoModalTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -148,22 +166,20 @@ Price: $9
 </div>
 <button type="button" class="btn btn-primary">Buy</button>
                 </div>
-            </article>
-             <article class="product-card">
                 <h3>Price of Persia: Warrior Within</h3>
                 <img src="img/princeww.jpg" alt="Prince of Persia: Warrior Within">
                 <div class="button-container">
                     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductsInfModal">
   Info
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="ProductsInfModal" tabindex="-1" role="dialog" aria-labelledby="ProductsInfModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="ProductsInfModalTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -199,28 +215,26 @@ Price: $6;
 </div>
 <button type="button" class="btn btn-primary">Buy</button>
                 </div>
-            </article>
-             <article class="product-card">
-                <h3>Call ofDuty 4: Modern Warfare</h3>
+                <h3>Call of Duty 4: Modern Warfare</h3>
                 <img src="img/callofduty.jpg" alt="Call of Duty 4: Modern Warfare">
                 <div class="button-container">
                     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductsIModal">
   Info
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="ProductsIModal" tabindex="-1" role="dialog" aria-labelledby="ProductsIModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="ProductsIModalTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-CPU: Pentium 4 2.4 GHz/ Athlon 64 2800+ (Intel & Athlon 1.8 GHz Dual Core or better supported)
+CPU: Pentium 4 2.4 GHz/ Athlon 64 2800+ (Intel / Athlon 1.8 GHz Dual Core or better supported)
 <br>
 RAM: 512 MB (768 MB for Windows Vista)
 <br>
@@ -247,22 +261,20 @@ Price: $10
 </div>
 <button type="button" class="btn btn-primary">Buy</button>
                 </div>
-            </article>
-             <article class="product-card">
                 <h3>Need for Speed: Payback</h3>
                 <img src="img/nfs.png" alt="Need for Speed: Payback">
                 <div class="button-container">
                     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductsModal">
   Info
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="ProductsModal" tabindex="-1" role="dialog" aria-labelledby="ProductsModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="ProductsModalTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -291,29 +303,27 @@ Price: $15
 </div>
 <button type="button" class="btn btn-primary">Buy</button>
                 </div>
-            </article>
-             <article class="product-card">
                 <h3>Stalker: Shadow of Chernobyl</h3>
                 <img src="img/stalker.jpg" alt="Stalker: Shadow of Chernobyl">
                 <div class="button-container">
                     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductsInfoModal">
   Info
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="ModalProducts" tabindex="-1" role="dialog" aria-labelledby="ProductModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="ProductModalTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
 CPU: Pentium 4/Athlon XP or better
-<br.
+<br>
 RAM: 512 MB
 <br>
 OS: Microsoft Windows XP (Service Pack 2)/Microsoft Windows 2000 SP4
@@ -339,22 +349,20 @@ Price: $5
 </div>
 <button type="button" class="btn btn-primary">Buy</button>
                 </div>
-            </article>
-             <article class="product-card">
                 <h3>Fortnite</h3>
                 <img src="img/fortnite.jpg" alt="Fortnite">
                 <div class="button-container">
                     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductsInfoModal">
   Info
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="ModalProduct" tabindex="-1" role="dialog" aria-labelledby="InfoProductsModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="InfoProductsModalTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -381,22 +389,20 @@ Price: Free
 </div>
 <button type="button" class="btn btn-primary">Buy</button>
                 </div>
-            </article>
-             <article class="product-card">
                 <h3>Fallout 4</h3>
                 <img src="img/fallout.jpg" alt="Fallout 4">
                 <div class="button-container">
                     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductsInfoModal">
   Info
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="Product" tabindex="-1" role="dialog" aria-labelledby="ProducModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="ProducModalTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -423,22 +429,20 @@ Price: $20
 </div>
 <button type="button" class="btn btn-primary">Buy</button>
                 </div>
-            </article>
-             <article class="product-card">
                 <h3>PUBG</h3>
                 <img src="img/pubg.jpg" alt="PUBG">
                 <div class="button-container">
                     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductsInfoModal">
   Info
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="ProducModal" tabindex="-1" role="dialog" aria-labelledby="ModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="ModalTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -467,21 +471,20 @@ Price: $20
 </div>
 <button type="button" class="btn btn-primary">Buy</button>
                 </div>
-</article>
      <h3>Grid 2</h3>
 <img src="img/thegrid22.jpg" alt="Grid 2">
 <div class="button-container">
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductsInfoModal">
   Info
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModaTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <h5 class="modal-title" id="ModaTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -511,10 +514,10 @@ Price: free
   </div>
 </div>
 <button type="button" class="btn btn-primary">Buy</button>
-                </div>
+ </div>
  </article>
       </main>
-      <h3>Your Comments</h3>
+      <h3 id="comments">Your Comments</h3>
       <footer>
           <div>
           <form>
@@ -580,7 +583,11 @@ Please choose a lastname.
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-     <script defer src="js/product-list.js"></script>
+
+
+   <script async src="js/alert-window.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>
+    <script defer src="js/index.js"></script>
   </body>
 </html>

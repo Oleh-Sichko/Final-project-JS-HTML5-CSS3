@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "title": "GTA 5",
+        "image": "gta5.jpg",
+        "price": 13
+    },
+    {
+        "id": "2",
+        "title": "Metro 2033",
+        "image": "metro2033.jpg",
+        "price": 9
+    },
+    {
+        "id": "3",
+        "title": "Price of Persia: Warrior Within",
+        "image": "princeww.jpg",
+        "price": 6
+    },
+    {
+        "id": "4",
+        "title": "Call of Duty 4: Modern Warfare",
+        "image": "callofduty.jpg",
+        "price": 10
+    },
+    {
+        "id": "5",
+        "title": "Need for Speed: Payback",
+        "image": "nfs.png",
+        "price": 15
+    },
+    {
+        "id": "6",
+        "title": "Stalker: Shadow of Chernobyl",
+        "image": "stalker.jpg",
+        "price": 5
+    },
+    {
+        "id": "7",
+        "title": "Fortnite",
+        "image": "fortnite.jpg",
+        "price": 0
+    },
+    {
+        "id": "8",
+        "title": "Fallout 4",
+        "image": "fallout.jpg",
+        "price": 20
+    },
+    {
+        "id": "9",
+        "title": "PUBG",
+        "image": "pubg.jpg",
+        "price": 20
+    },
+    {
+        "id": "10",
+        "title": "Grid 2",
+        "image": "thegrid22.jpg",
+        "price": 0
+    }
+]

@@ -22,3 +22,15 @@ a {
     font-family: 'Indie Flower', cursive;
     font-size: 2rem;
 }
+
+body {
+    background-color: rgb(161, 162, 163);
+    max-width: 980px;
+    margin: auto;
+}
+ html {
+    scroll-behavior: smooth;
+ }
+ h1 {
+     text-align: center;
+ }
