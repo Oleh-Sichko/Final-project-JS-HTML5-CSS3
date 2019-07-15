@@ -1,3 +1,4 @@
+let cart = {};
 
 function clock(){
     var date = new Date(),
