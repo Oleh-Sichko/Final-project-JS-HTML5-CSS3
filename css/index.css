@@ -46,3 +46,6 @@ body {
 .clock {
     color: white;
 }
+img {
+    min-width: 320px;
+}
