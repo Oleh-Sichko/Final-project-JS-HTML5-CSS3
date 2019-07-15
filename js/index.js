@@ -1,5 +1,3 @@
-let cart = {};
-
 function clock(){
     var date = new Date(),
         hours = (date.getHours() < 10) ? '0' + date.getHours() : date.getHours(),
