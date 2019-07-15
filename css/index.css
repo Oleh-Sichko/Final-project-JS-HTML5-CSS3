@@ -6,7 +6,7 @@ img {
     max-width: 1500px;
 }
 h1 {
-    color: green;
+    color: whitesmoke;
     font-family: 'Inconsolata', monospace;
     font-size: 3rem;
 }
@@ -24,7 +24,7 @@ a {
 }
 
 body {
-    background-color: rgb(161, 162, 163);
+    background: url(../img/polosy.jpg) no-repeat center fixed;
     max-width: 980px;
     margin: auto;
 }
@@ -34,3 +34,15 @@ body {
  h1 {
      text-align: center;
  }
+
+ h3 {
+     color:blanchedalmond;
+ }
+
+ label {
+     color: antiquewhite;
+ }
+
+.clock {
+    color: white;
+}

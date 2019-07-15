@@ -7,10 +7,3 @@ function clock(){
     document.getElementById('clock').innerHTML = hours + ':' + minutes + ':' + seconds;
 }
 setInterval(clock, 1000)
-
-const cart = new Cart($('#cartModal'));
-const productList = new ProductList(
-  'products.json',
-  $('.products-container'),
-  cart
-);
