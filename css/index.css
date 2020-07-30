@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
-img {
-    max-height: 500px;
-    max-width: 1500px;
-}
 h1 {
     color: whitesmoke;
     font-family: 'Inconsolata', monospace;
@@ -25,7 +21,6 @@ a {
 
 body {
     background: url(../img/polosy.jpg) no-repeat center fixed;
-    max-width: 980px;
     margin: auto;
 }
  html {
